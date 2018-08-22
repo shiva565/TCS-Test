@@ -1,0 +1,6 @@
+<p>
+  parent works!
+</p>
+<input type="text" [(ngModel)]="firstName">
+<app-child [fullName]="fullName" [firstName]="firstName" (change)="changeMethod($event)"></app-child>
+<button (click)="generateEvent()">emitEvent</button>
